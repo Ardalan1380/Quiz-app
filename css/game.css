@@ -1,0 +1,126 @@
+#loader {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #6757d9;
+    border-bottom-color:transparent;
+    border-top-color:transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: loader 1.5s linear infinite;
+}
+
+body {
+    flex-direction: column;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#container {
+    display: none;
+    width: 700px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6757d9;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header div {
+    display: flex;
+}
+
+.header span {
+    background-color: #fff;
+    padding: 2px 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#question-box {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#question-text {
+    margin-bottom: 15px;
+    background-color: #6757d9;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.answer-text {
+    margin: 5px 0;
+    text-align: left;
+    padding: 8px;
+    border: none;
+    background-color:#dbd9db;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all ease-in 0.15s;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.answer-text:hover {
+    background-color: #eeeeee;
+    border: 1px solid #e0d7e0;
+}
+
+#finish-button , #next-button {
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid #6757d9;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #6757d9;
+    cursor: pointer;
+    transition: all ease-in 0.15s;
+}
+
+#next-button {
+    margin-left: 10px;
+}
+
+#finish-button:hover ,
+#next-button:hover {
+    background-color: #6757d9;
+    color: #fff;
+}
+
+.correct {
+    background-color: #5bd7bc;
+}
+
+.incorrect {
+    background-color: #fe6681;
+}
+
+.correct:hover {
+    background-color: #5bd7bc;
+}
+
+.incorrect:hover{
+    background-color: #fe6681;
+}
+
+#error {
+    display: none;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
