@@ -43,7 +43,6 @@ const showQuestion = () => {
     questionNumber.innerText = questionIndex + 1
     const {question , answers , correctAnswwerIndex} =  formatedData[questionIndex];
     correctAnswer = correctAnswwerIndex	;
-    console.log(correctAnswwerIndex)
     questionText.innerText = question;
     answerList.forEach((button , index) => {
         button.innerText = answers[index];
