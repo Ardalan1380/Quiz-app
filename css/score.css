@@ -67,3 +67,9 @@ a:hover {
     background-color: #6757d9;
     color: #fff;
 }
+
+@media(max-width:550px) {
+    li {
+        width: 250px;
+    }
+}
